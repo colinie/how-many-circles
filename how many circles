@@ -1,0 +1,42 @@
+def getstring():
+    numstring = input('enter a string of numbers: ')
+    if numstring.isdigit ==False:
+        print('wrong format')
+        numstring = input('enter a string of numbers: ')
+    else:
+        findvalue(numstring)
+
+def findvalue(numstring):
+    numstring=list(numstring)
+    i=0
+    value=0
+    while i<len(numstring):
+        if numstring[i]==0:
+            value=value+1
+            i=i+1
+        elif numstring[i]==1:
+            i=i+1
+        elif numstring[i]==2:
+            i=i+1
+        elif numstring[i]==3:
+            i=i+1
+        elif numstring[i]==4:
+            i=i+1
+        elif numstring[i]==5:
+            i=i+1
+        elif numstring[i]==6:
+            value=value+1
+            i=i+1
+        elif numstring[i]==7:
+            i=i+1
+        elif numstring[i]==8:
+            value=value+2
+            i=i+1
+        elif numstring[i]==9:
+            value=value+1
+            i=i+1
+    print('final value is', value)
+
+
+getstring()
+
